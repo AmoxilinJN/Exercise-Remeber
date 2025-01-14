@@ -1116,7 +1116,7 @@ int main()
 	printf("0x%X\n", v3);
 	printf("0x%X", ~mask);
 }*/
-#include<stdio.h>
+/*#include<stdio.h>
 #include<stdlib.h>
 struct Book
 {
@@ -1231,3 +1231,18 @@ int main()
 	}
 	printf("%s-%s")//
 }*/
+#include <stdio.h>
+#include<stdlib.h>
+#include<errno.h>
+#include<string.h>
+int main()
+{
+	FILE* fp;
+	if ((fp = fopen("no.txt", "r"))==NULL) {
+		perror("错误原因为");
+		fprintf(stderr, "原因是-> %s <-这个", strerror(errno));
+		exit(EXIT_FAILURE);
+	}
+	fclose(fp);
+	return 0;
+}
