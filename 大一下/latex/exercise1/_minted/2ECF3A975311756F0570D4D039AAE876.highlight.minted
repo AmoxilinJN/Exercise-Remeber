@@ -1,0 +1,20 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{l+m+mf}{1.}\PYG{+w}{ }极限计算：
+\PYG{+w}{ }\PYG{n}{limit1}\PYG{+w}{ }\PYG{p}{=}\PYG{l+m+mi}{1}
+\PYG{+w}{ }\PYG{n}{limit2}\PYG{+w}{ }\PYG{p}{=}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{l+m+mf}{2.}\PYG{+w}{ }偏导数计算：
+\PYG{+w}{ }\PYG{n}{df1\PYGZus{}dx}\PYG{+w}{ }\PYG{p}{=}\PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{df1\PYGZus{}dy}\PYG{+w}{ }\PYG{p}{=}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{d2f1\PYGZus{}dx2}\PYG{+w}{ }\PYG{p}{=}\PYG{l+m+mi}{6}\PYG{o}{*}\PYG{n}{x}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{d2f1\PYGZus{}dy2}\PYG{+w}{ }\PYG{p}{=}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{df2\PYGZus{}dx}\PYG{+w}{ }\PYG{p}{=}\PYG{n}{y}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{df2\PYGZus{}dy}\PYG{+w}{ }\PYG{p}{=}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{d2f2\PYGZus{}dx2}\PYG{+w}{ }\PYG{p}{=}\PYG{n}{y}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{9}\PYG{o}{*}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{4}\PYG{o}{*}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{6}\PYG{o}{*}\PYG{n}{x}\PYG{o}{*}\PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{+w}{ }\PYG{n}{d2f2\PYGZus{}dy2}\PYG{+w}{ }\PYG{p}{=}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}
+\PYG{l+m+mf}{3.}\PYG{+w}{ }积分计算：
+\PYG{+w}{ }\PYG{n}{int1}\PYG{+w}{ }\PYG{p}{=}\PYG{l+m+mi}{0}
+\PYG{+w}{ }\PYG{n}{int2}\PYG{+w}{ }\PYG{p}{=}\PYG{n+nb}{pi}\PYG{o}{/}\PYG{l+m+mi}{2}
+\PYG{l+m+mf}{4.}\PYG{+w}{ }级数求和：
+\PYG{+w}{ }\PYG{n}{sum1}\PYG{+w}{ }\PYG{p}{=}\PYG{p}{(}\PYG{n}{n}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{6}
+\PYG{+w}{ }\PYG{n}{sum2}\PYG{+w}{ }\PYG{p}{=}\PYG{n+nb}{pi}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{o}{/}\PYG{l+m+mi}{6}
+\end{MintedVerbatim}

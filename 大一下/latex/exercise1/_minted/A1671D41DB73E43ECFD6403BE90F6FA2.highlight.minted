@@ -1,0 +1,19 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZca{}}\PYG{o}{\PYGZca{}}\PYG{n}{Isyms}\PYG{+w}{ }\PYG{n}{x1}\PYG{+w}{ }\PYG{n}{x3}\PYG{+w}{ }\PYG{n}{x4}\PYG{+w}{ }\PYG{n}{x5}
+
+\PYG{c}{\PYGZpc{} 定义方程组}
+\PYG{n}{eq1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{x1}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{300}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{250}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{;}\PYG{+w}{        }\PYG{c}{\PYGZpc{} 左上交叉点}
+\PYG{n}{eq2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{250}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{50}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{x5}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{600}\PYG{p}{;}\PYG{+w}{         }\PYG{c}{\PYGZpc{} 右上交叉点}
+\PYG{n}{eq3}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{x3}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{x1}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{700}\PYG{p}{;}\PYG{+w}{         }\PYG{c}{\PYGZpc{} 左下交叉点}
+\PYG{n}{eq4}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{x5}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{700}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{x4}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{600}\PYG{p}{;}\PYG{+w}{         }\PYG{c}{\PYGZpc{} 右下交叉点}
+
+\PYG{c}{\PYGZpc{} 求解方程组}
+\PYG{n}{sol}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{solve}\PYG{p}{(}\PYG{p}{[}\PYG{n}{eq1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{eq2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{eq3}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{eq4}\PYG{p}{]}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{x1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x3}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x4}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x5}\PYG{p}{]}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{} 显示结果}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{解为：\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{p}{[}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{x1 = \PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{double}\PYG{p}{(}\PYG{n}{sol}\PYG{p}{.}\PYG{n}{x1}\PYG{p}{)}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}\PYG{p}{;}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{p}{[}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{x3 = \PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{double}\PYG{p}{(}\PYG{n}{sol}\PYG{p}{.}\PYG{n}{x3}\PYG{p}{)}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}\PYG{p}{;}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{p}{[}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{x4 = \PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{double}\PYG{p}{(}\PYG{n}{sol}\PYG{p}{.}\PYG{n}{x4}\PYG{p}{)}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}\PYG{p}{;}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{p}{[}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{x5 = \PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{num2str}\PYG{p}{(}\PYG{n+nb}{double}\PYG{p}{(}\PYG{n}{sol}\PYG{p}{.}\PYG{n}{x5}\PYG{p}{)}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}\PYG{p}{;}
+\end{MintedVerbatim}

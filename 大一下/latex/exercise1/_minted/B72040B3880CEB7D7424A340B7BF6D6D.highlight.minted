@@ -1,0 +1,32 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{ }\PYG{n}{syms}\PYG{+w}{ }\PYG{l+s}{x}\PYG{+w}{ }\PYG{l+s}{y}\PYG{+w}{ }\PYG{l+s}{n}\PYG{+w}{ }\PYG{l+s}{k}
+
+\PYG{c}{\PYGZpc{} 1. 求极限}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{1. 极限计算：\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{limit1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{limit}\PYG{p}{(}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{o}{/}\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{limit2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{limit}\PYG{p}{(}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{n}\PYG{p}{)}\PYG{o}{\PYGZca{}}\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{inf}\PYG{p}{)}
+
+\PYG{c}{\PYGZpc{} 2. 偏导数计算}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{2. 偏导数计算：\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{f1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{df1\PYGZus{}dx}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{)}
+\PYG{n}{df1\PYGZus{}dy}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{)}
+\PYG{n}{d2f1\PYGZus{}dx2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{d2f1\PYGZus{}dy2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{n}{f2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{o}{*}\PYG{n+nb}{exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{df2\PYGZus{}dx}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{)}
+\PYG{n}{df2\PYGZus{}dy}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{)}
+\PYG{n}{d2f2\PYGZus{}dx2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{d2f2\PYGZus{}dy2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{diff}\PYG{p}{(}\PYG{n}{f2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{c}{\PYGZpc{} 3. 积分计算}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{3. 积分计算：\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{int1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{int}\PYG{p}{(}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{x}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{pi}\PYG{p}{)}
+\PYG{n}{int2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{int}\PYG{p}{(}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{o}{/}\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{inf}\PYG{p}{)}
+
+\PYG{c}{\PYGZpc{} 4. 级数求和}
+\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{4. 级数求和：\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{sum1}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{symsum}\PYG{p}{(}\PYG{n}{k}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{k}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{p}{)}
+\PYG{n}{sum2}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{symsum}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{k}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{k}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{inf}\PYG{p}{)}
+\end{MintedVerbatim}

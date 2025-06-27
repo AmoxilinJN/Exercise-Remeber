@@ -1,0 +1,18 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n}{A}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{    }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{2}\PYG{+w}{ }\PYG{l+s}{1}\PYG{+w}{ }\PYG{l+s}{7}\PYG{+w}{ }\PYG{l+s}{5}\PYG{+w}{ }\PYG{l+s}{2}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{4}\PYG{+w}{ }\PYG{l+s}{2}\PYG{+w}{ }\PYG{l+s}{14}\PYG{+w}{ }\PYG{l+s}{6}\PYG{+w}{ }\PYG{l+s}{0]}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{} 求秩}
+\PYG{n}{rank\PYGZus{}A}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{rank}\PYG{p}{(}\PYG{n}{A}\PYG{p}{)}
+
+\PYG{c}{\PYGZpc{} 化为行最简形}
+\PYG{n}{rref\PYGZus{}A}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{rref}\PYG{p}{(}\PYG{n}{A}\PYG{p}{)}
+
+\PYG{c}{\PYGZpc{} 提取极大无关组（前rank\PYGZus{}A列）}
+\PYG{n}{max\PYGZus{}indep}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{A}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{rank\PYGZus{}A}\PYG{p}{)}
+
+\PYG{c}{\PYGZpc{} 将其他向量表示为极大无关组的线性组合}
+\PYG{n}{coefficients}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{rref\PYGZus{}A}\PYG{p}{(}\PYG{p}{:}\PYG{p}{,}\PYG{n}{rank\PYGZus{}A}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{k}{end}\PYG{p}{)}
+\end{MintedVerbatim}

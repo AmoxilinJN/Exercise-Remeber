@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }方式10\PYG{+w}{ }\PYG{p}{(}使用2\PYG{p}{.}100000\PYG{n}{e}\PYG{o}{+}01次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }1根25\PYG{p}{.}6\PYG{n}{m}\PYG{+w}{ }4根18\PYG{p}{.}2\PYG{n}{m}
+\PYG{+w}{    }方式31\PYG{+w}{ }\PYG{p}{(}使用2次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }1根40\PYG{p}{.}5\PYG{n}{m}\PYG{+w}{ }3根18\PYG{p}{.}2\PYG{n}{m}
+\PYG{+w}{    }方式34\PYG{+w}{ }\PYG{p}{(}使用2\PYG{p}{.}000000\PYG{n}{e}\PYG{o}{+}00次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }1根40\PYG{p}{.}5\PYG{n}{m}\PYG{+w}{ }2根25\PYG{p}{.}6\PYG{n}{m}
+\PYG{+w}{    }方式37\PYG{+w}{ }\PYG{p}{(}使用1\PYG{p}{.}250000\PYG{n}{e}\PYG{o}{+}02次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }1根40\PYG{p}{.}5\PYG{n}{m}\PYG{+w}{ }1根32\PYG{p}{.}4\PYG{n}{m}\PYG{+w}{ }1根25\PYG{p}{.}6\PYG{n}{m}
+\PYG{+w}{    }方式39\PYG{+w}{ }\PYG{p}{(}使用36次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }2根40\PYG{p}{.}5\PYG{n}{m}\PYG{+w}{ }1根18\PYG{p}{.}2\PYG{n}{m}
+\PYG{+w}{    }方式45\PYG{+w}{ }\PYG{p}{(}使用2\PYG{p}{.}500000\PYG{n}{e}\PYG{o}{+}01次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }1根46\PYG{p}{.}3\PYG{n}{m}\PYG{+w}{ }2根25\PYG{p}{.}6\PYG{n}{m}
+\PYG{+w}{    }方式47\PYG{+w}{ }\PYG{p}{(}使用7\PYG{p}{.}500000\PYG{n}{e}\PYG{o}{+}01次\PYG{p}{)}\PYG{p}{:}\PYG{+w}{ }1根46\PYG{p}{.}3\PYG{n}{m}\PYG{+w}{ }1根32\PYG{p}{.}4\PYG{n}{m}\PYG{+w}{ }1根18\PYG{p}{.}2\PYG{n}{m}
+\end{MintedVerbatim}
