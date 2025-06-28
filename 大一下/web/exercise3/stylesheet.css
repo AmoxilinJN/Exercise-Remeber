@@ -1,0 +1,14 @@
+#grad{
+    background-image: linear-gradient(rgba(63, 63, 255, 0.949),white,rgba(63, 63, 255, 0.949));
+}
+#table{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:solid;
+    border-width:1px;
+    border-color:#000;
+    margin-top: 50px;
+}
+#title{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}

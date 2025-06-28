@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<body id="grad">
+    <div align="center">
+        <form name="Login">
+            <table width="600" border="0" cellspacing="20" cellpadding="1" id="table">
+                <tr>
+                    <td colspan="2" align="center" id="title"><strong>用户注册</strong></td>
+                </tr>
+                <tr>
+                    <td align="right">用户名:</td>
+                    <td align="left"><input name="user" type="text" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">密码:</td>
+                    <td align="left"><input type="password" name="password" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">性别：</td>
+                    <td align="left"><input type="radio" name="gender" size="5" value="男">男
+                    <input type="radio" name="gender_1" size="5" value="女">女</td>
+                </tr>
+                <tr>
+                    <td align="right">地址：</td>
+                    <td align="left"><input type="text" name="address" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="right">生日：</td>
+                    <td align="left"><input type="date" name="birth" size="5" value="2001-01-01"></td>
+                </tr>
+                <tr>
+                    <td align="right">学历：</td>
+                    <td align="left"><select name="edu">
+                        <option name="高中" selected="selected">高中</option>
+                        <option name="大专">大专</option>
+                        <option name="本科">本科</option>
+                        <option name="研究生">研究生</option>
+                        <option name="博士生">博士生</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right">爱好：</td>
+                    <td><input type="checkbox" name="足球" value="足球"\>足球
+                    <input type="checkbox" name="篮球" value="篮球"\>篮球
+                    <input type="checkbox" name="乒乓球" value="乒乓球"\>乒乓球
+                    <input type="checkbox" name="羽毛球" value="羽毛球"\>羽毛球
+                    <input type="checkbox" name="game" value="play game"\>play game</td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">备注</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><textarea name="note" rows="5" cols="60"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><input type="button" name="submit" value="提交" onclick="alert('提交成功!')"><input type="reset" name="reset" value="重置"></td>
+                </tr>
+        </form>
+    </div>
+</body>
+</html>
