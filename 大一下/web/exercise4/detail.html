@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">电商平台</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="cart.html">购物车 (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="detail-container">
+            <div class="product-detail" id="product-detail">
+                <!-- 商品详情将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 购买成功提示窗口 -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>购买成功！</h2>
+            <div id="purchase-info"></div>
+        </div>
+    </div>
+
+    <p align="center"><strong>copyright:ciallo©</strong></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

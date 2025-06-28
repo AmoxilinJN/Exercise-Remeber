@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">电商平台</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="cart.html">购物车 (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h2>购物车</h2>
+            <div class="cart-content">
+                <div id="cart-items">
+                    <!-- 购物车商品将通过JavaScript动态加载 -->
+                </div>
+                <div class="cart-summary">
+                    <div class="total-price">
+                        <h3>总计：¥<span id="total-price">0</span></h3>
+                    </div>
+                    <button id="checkout-btn" class="checkout-btn">结算</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <p align="center"><strong>copyright:ciallo©</strong></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

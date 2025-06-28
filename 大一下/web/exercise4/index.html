@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商首页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">电商平台</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="cart.html">购物车 (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 筛选区域 -->
+        <div class="filter-section">
+            <h3>商品筛选</h3>
+            <div class="filter-container">
+                <!-- 筛选条件1：分类下拉框 -->
+                <div class="filter-item">
+                    <label>商品分类：</label>
+                    <select id="category-filter">
+                        <option value="">全部分类</option>
+                        <option value="electronics">电子产品</option>
+                        <option value="clothing">服装</option>
+                        <option value="books">图书</option>
+                        <option value="home">家居</option>
+                    </select>
+                </div>
+
+                <!-- 筛选条件2：价格范围滑块 -->
+                <div class="filter-item">
+                    <label>价格范围：</label>
+                    <input type="range" id="price-filter" min="0" max="114514" value="114514">
+                    <span id="price-display">0-114514元</span>
+                </div>
+
+                <!-- 筛选条件3：品牌复选框 -->
+                <div class="filter-item">
+                    <label>品牌：</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" value="apple" class="brand-filter"> 苹果</label>
+                        <label><input type="checkbox" value="samsung" class="brand-filter"> 三星</label>
+                        <label><input type="checkbox" value="nike" class="brand-filter"> 耐克</label>
+                        <label><input type="checkbox" value="adidas" class="brand-filter"> 阿迪达斯</label>
+                    </div>
+                </div>
+
+                <button id="filter-btn">筛选</button>
+                <button id="reset-btn">重置</button>
+            </div>
+        </div>
+
+        <!-- 商品列表 -->
+        <div class="products-container">
+            <div class="product-grid" id="product-grid">
+                <!-- 商品将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </main>
+
+    <p align="center"><strong>copyright:ciallo©</strong></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
